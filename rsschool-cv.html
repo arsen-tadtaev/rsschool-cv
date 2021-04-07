@@ -1,0 +1,53 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="cv-container">
+        <header>
+        
+            <h2>Arseniy Tadtaev</h2>
+            <h3>Contacts</h3>
+            <ul>
+                <li>Email: arsen.tadtaev@gmail.com</li>
+            </ul>
+        </header>
+        <section>
+            <h3>Summary</h3>
+            <p>I love sports and football. Novice programmer. I want to improve my skills in web development.
+
+</p>
+<h3>Skills</h3>
+<p>JS, HTML, CSS.</p>
+        </section>
+        <section>
+            <h3>Code example</h3>
+            <pre>                /**
+                * Преобразовывает число в формат с плавающей точкой для отображения финансовых показателей.
+                * @param {number} number Число
+                * @param {number} digits Количество цифр, которые надо отобразить после запятой
+                */
+                export const financial = (
+                    number: number,
+                    digits: number = 3
+                ): string | null =&gt; {
+                    if (!Number.isFinite(number)) return null;
+                    return new Intl.NumberFormat('ru-RU', {
+                        minimumFractionDigits: digits,
+                    }).format(number);
+                };
+            </pre>
+        </section>
+        <section>
+            <h3>Education</h3>
+            <p>The Rolling Scopes School</p>
+        </section>
+        <section>
+            <h3>English</h3>
+            <p>B2 probably</p>
+        </section>
+    </main>
+
+</body></html>
